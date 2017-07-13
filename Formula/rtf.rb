@@ -1,5 +1,3 @@
-require "language/go"
-
 class Rtf < Formula
   desc "Regression testing framework"
   homepage "https://github.com/linuxkit/rtf"
