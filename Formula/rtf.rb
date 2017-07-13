@@ -13,9 +13,9 @@ class Rtf < Formula
 
     ENV["GOPATH"] = "#{buildpath}/Godeps/_workspace:#{buildpath}"
 
-    system "make build"
+    system "make"
 
-    bin.install "_build/rtf"
+    bin.install "rtf"
   end
 
   test do
