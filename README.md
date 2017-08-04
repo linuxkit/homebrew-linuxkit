@@ -12,6 +12,8 @@ then install with
 ```
 brew install --HEAD moby
 brew install --HEAD linuxkit
+brew install --HEAD rtf
+brew install --HEAD manifest-tool
 ```
 
 Currently only `HEAD` taps are available, but releases will be available later.
