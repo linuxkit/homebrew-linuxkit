@@ -1,7 +1,5 @@
-require "language/go"
-
 class Linuxkit < Formula
-  desc "Lightweight Linux districution tool"
+  desc "Lightweight Linux distribution tool"
   homepage "https://github.com/linuxkit/linuxkit"
   head "https://github.com/linuxkit/linuxkit.git"
 
@@ -19,7 +17,7 @@ class Linuxkit < Formula
   end
 
   test do
-    output = shell_output(bin/"moby version")
-    assert_match "moby version", output
+    output = shell_output(bin/"linuxkit version")
+    assert_match "linuxkit version", output
   end
 end

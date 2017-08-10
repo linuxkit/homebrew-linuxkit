@@ -1,5 +1,3 @@
-require "language/go"
-
 class Moby < Formula
   desc "Container assembly tool"
   homepage "https://github.com/moby/tool"

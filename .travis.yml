@@ -1,0 +1,10 @@
+os: osx
+before_install:
+  - brew update
+  - brew --env
+  - brew config
+install:
+  - mkdir -p $(brew --repo)/Library/Taps/linuxkit
+  - ln -s $TRAVIS_BUILD_DIR $(brew --repo)/Library/Taps/linuxkit/homebrew-linuxkit
+script:
+  - ./test.sh
