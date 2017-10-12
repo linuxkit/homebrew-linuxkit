@@ -11,7 +11,7 @@ class Linuxkit < Formula
 
     ENV["GOPATH"] = "#{buildpath}/Godeps/_workspace:#{buildpath}"
 
-    system "make", "local"
+    system "make", "local-build"
 
     bin.install "bin/linuxkit"
   end
