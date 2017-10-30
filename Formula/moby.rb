@@ -6,12 +6,7 @@ class Moby < Formula
   depends_on "go" => :build
 
   def install
-    mkdir_p buildpath/"src/github.com/moby"
-    ln_s buildpath, buildpath/"src/github.com/moby/tool"
-
-    ENV["GOPATH"] = "#{buildpath}/Godeps/_workspace:#{buildpath}"
-
-    system "make", "./dist/moby"
+    system "make", "nogopath"
 
     bin.install "./dist/moby"
   end
