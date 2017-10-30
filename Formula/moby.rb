@@ -11,9 +11,9 @@ class Moby < Formula
 
     ENV["GOPATH"] = "#{buildpath}/Godeps/_workspace:#{buildpath}"
 
-    system "make"
+    system "make", "./dist/moby"
 
-    bin.install "moby"
+    bin.install "./dist/moby"
   end
 
   test do
