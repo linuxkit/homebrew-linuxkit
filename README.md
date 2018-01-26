@@ -8,7 +8,14 @@ You can add these to your homebrew install with
 ```
 brew tap linuxkit/linuxkit
 ```
-then install with
+
+Currently only the `linuxkit` formula has a release, for the latest stable
+you can do
+```
+brew install linuxkit
+```
+
+You can install HEAD formulas, which update regularly with
 ```
 brew install --HEAD moby
 brew install --HEAD linuxkit
@@ -16,12 +23,9 @@ brew install --HEAD rtf
 brew install --HEAD manifest-tool
 ```
 
-Currently only `HEAD` taps are available, but releases will be available later.
-
 `HEAD` taps are a bit odd for upgrades, so upgrade with
 ```
 brew reinstall --HEAD moby
-brew reinstall --HEAD linuxkit
 ```
 
 To remove
