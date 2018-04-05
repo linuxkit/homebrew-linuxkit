@@ -1,8 +1,8 @@
 class Linuxkit < Formula
   desc "Lightweight Linux distribution tool"
   homepage "https://github.com/linuxkit/linuxkit"
-  url "https://github.com/linuxkit/linuxkit/archive/v0.2.tar.gz"
-  sha256 "d53bc78d17d0f8286260a9fda6734ece6b9ec2881e1b385e2abc61b59352295f"
+  url "https://github.com/linuxkit/linuxkit/archive/v0.3.tar.gz"
+  sha256 "b32ce161ac1cd11f5eba8221c8197a79fcd68860b2aa2891c971ac3312991aa7"
   head "https://github.com/linuxkit/linuxkit.git"
 
   depends_on "go" => :build
