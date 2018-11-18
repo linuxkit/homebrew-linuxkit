@@ -17,7 +17,6 @@ brew install linuxkit
 
 You can install HEAD formulas, which update regularly with
 ```
-brew install --HEAD moby
 brew install --HEAD linuxkit
 brew install --HEAD rtf
 brew install --HEAD manifest-tool
@@ -30,7 +29,6 @@ brew reinstall --HEAD moby
 
 To remove
 ```
-brew remove moby
 brew remove linuxkit
 brew untap linuxkit/linuxkit
 ```
